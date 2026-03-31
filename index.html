@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Faster The Dhaaba</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body{
+    margin:0;
+    font-family: Arial;
+}
+
+/* NAVBAR */
+nav{
+    display:flex;
+    justify-content:space-between;
+    background:linear-gradient(to right,#ff512f,#dd2476);
+    color:white;
+    padding:15px 50px;
+}
+nav ul{
+    display:flex;
+    list-style:none;
+}
+nav ul li{
+    margin:0 15px;
+}
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+/* HERO */
+.hero{
+    text-align:center;
+    padding:100px;
+    background:#ffe6e6;
+}
+.hero button{
+    padding:10px 20px;
+    background:#ff512f;
+    color:white;
+    border:none;
+    border-radius:5px;
+}
+
+/* CARDS */
+.recipes{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:50px;
+}
+.card{
+    width:250px;
+    padding:15px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    text-align:center;
+}
+.card img{
+    width:100%;
+    border-radius:10px;
+}
+.card button{
+    background:#dd2476;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:5px;
+}
+
+/* ABOUT + CONTACT */
+.about, .contact{
+    text-align:center;
+    padding:50px;
+    background:#f9f9f9;
+}
+
+footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:10px;
+}
+</style>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h1>🍛 Faster The Dhaaba</h1>
+    <ul>
+        <li><a href="#recipes">Recipes</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <h2>Delicious Indian Sweets</h2>
+    <p>घर जैसा स्वाद 😋</p>
+    <button onclick="orderNow()">Order Now</button>
+</section>
+
+<!-- RECIPE SECTION -->
+<section id="recipes" class="recipes">
+
+    <div class="card">
+        <img src="images/gulab.jpg">
+        <h3>Gulab Jamun</h3>
+        <p>Soft & juicy Indian sweet.</p>
+        <button onclick="buyItem('Gulab Jamun')">Buy</button>
+    </div>
+
+    <div class="card">
+        <img src="images/falooda.jpg">
+        <h3>Royal Falooda</h3>
+        <p>Cold & refreshing dessert.</p>
+        <button onclick="buyItem('Falooda')">Buy</button>
+    </div>
+
+    <div class="card">
+        <img src="images/barfi.jpg">
+        <h3>Kaju Barfi</h3>
+        <p>Premium kaju sweet.</p>
+        <button onclick="buyItem('Barfi')">Buy</button>
+    </div>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+    <h2>About Us</h2>
+    <p>We serve homemade Indian sweets with love ❤️</p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Email">
+    <textarea placeholder="Message"></textarea>
+    <button>Send</button>
+</section>
+
+<footer>
+    <p>© 2026 Faster The Dhaaba</p>
+</footer>
+
+<script >
+function orderNow(){
+    alert("Welcome to Faster The Dhaaba 😍");
+}
+
+function buyItem(item){
+    alert(item + " ordered successfully 🛒");
+}
+</script>
+</body>
+</html>
